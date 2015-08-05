@@ -1,0 +1,106 @@
+
+// ===start of footer
+footer p {
+	color:#70838E;
+}
+.footer-container {
+	// display:flex;
+	// flex-direction:row;
+	text-align:center;
+	// flex-wrap:wrap;
+	position:relative;
+	bottom:140px;
+}
+.details {
+	display:inline-block;
+	padding:1.5rem;
+	img {
+		display:inline-block;
+	}
+}
+.icons .fa {
+	display:inline-block;
+	color:#70838E;
+	padding:0.5rem;
+}
+.contact-container {
+	background: white;
+	margin:0 auto;
+	padding:1rem;
+}
+.field-container {
+	// position:absolute;
+	margin:0 auto;
+}
+.icon-container {
+	position:relative;
+	.fa {
+		position:absolute;
+		right:20px;
+		top:-22px;
+		font-size:20px;
+		color:black;
+	}
+}
+.map {
+	position:relative;
+}
+.mapmarker {
+	position:absolute;
+	top:40%;
+	left:45%
+}
+input {
+	@include contact-fields;
+}
+textarea {
+	@include contact-fields;
+}
+.msg {
+	width: 100%;
+}
+.message-button {
+	background: $white;
+	border:3px solid $main-black;
+	color:$main-black;
+	margin:0;
+	display:inline-block;
+	width: 40%;
+	margin-top:1rem;
+	padding:15px;
+}
+.gourmet-full-details {
+	text-align:left;
+	display:inline-block;
+	margin-left:3%;
+	position:relative;
+}
+.address-container::before{
+	content: url(assets/locationicon.png);
+	display:inline-block;
+	position:absolute;
+	left:-12px;
+}
+.modem-container::before {
+	content: url(assets/mobile.png);
+	display:inline-block;
+	position:absolute;
+	left:-12px;
+}
+.email-container::before {
+	content: url(assets/mail.png);
+	display:inline-block;
+	position:absolute;
+	left:-12px;
+}
+.address:first-child, 
+.modem-container:first-child, 
+.email-container:first-child {
+	display:inline;
+}
+.address-container, 
+.modem-container,
+.email-container {
+	text-indent: -2em;
+	margin-bottom:2rem;
+}

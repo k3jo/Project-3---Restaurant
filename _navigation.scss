@@ -1,0 +1,91 @@
+// VARIABLES - RESTAURANT.PSD PROJECT
+
+.nav-wrapper {
+	margin:0 auto;
+	width: 91%
+}
+nav ul {
+	margin:0;
+	padding:0;
+}
+nav {
+	position:fixed;
+	background: rgba($main-black, 0.8);
+	width: 15%;
+	height:100vh;
+	// border-right:1px solid white;
+	z-index:100;
+	top:0;
+	li {
+		display:block;
+		list-style-type:none;
+		padding-left:2rem;
+	a {
+		margin:1rem;
+		padding:3px;
+		display:block;
+		color:$gray;
+		text-decoration: none;
+		p:last-child{
+			margin-bottom:2rem;
+		}
+		}
+	}
+}
+nav ul li a:hover {
+	background:$orange;
+	color:white;
+}
+ul li .fa {
+	display:inline;
+	color:$gray;
+}
+
+.fa {
+	display:block;
+	margin-top:2rem;
+}
+nav p,
+nav .fa {
+	text-align:center;
+	color:$gray;
+}
+nav p {
+	word-wrap:break-word;
+	font-size:12px;
+
+}
+.orange .fa {
+	@include social-media-size;
+}
+.orange,
+.orange .fa {
+	color:$orange;
+}
+.link {
+	color:$white;
+}
+div.nav-social{
+	margin:0 auto;
+}
+.nav-social{
+	text-align:center;
+	width:70%;
+	padding:2rem 0;
+	border-top:1px solid $gray;
+	a{
+		text-decoration:none;
+	}
+	.fa {
+		display:inline;
+		margin:5px;
+		@include social-media-size;
+	}
+}
+.nav-copyright p{
+	margin:0;
+	color:$gray;
+}
+.allrights {
+	text-transform:uppercase;
+}

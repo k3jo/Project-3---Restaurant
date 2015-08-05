@@ -1,0 +1,277 @@
+@import 'setup';
+@import 'variables';
+@import 'navigation';
+@import 'profiles';
+@import 'breakfast';
+@import 'footer';
+
+body {
+	font-family:sans-serif;
+	color:white;
+	font-size:12px;
+}
+h1 {
+	@include headers(20px, black);
+}
+h2 {
+	@include headers(40px, black);
+}
+h2 span {
+	color:$orange;
+}
+h3 {
+	@include headers-alt(20px,$orange);
+}
+h4 {
+	@include headers-alt(20px, $main-black);
+	margin:0;
+}
+h5 {
+	@include headers-alt(20px, $white);
+	margin:0;
+}
+.wrapper {
+	margin:0 auto;
+	// max-width:1000px;
+	padding:0% 10%;
+}
+#nav-check {
+	display:none;
+}
+.splash {
+	background: url(assets/cookies.jpg);
+	background-size:cover;
+	height: 100vh;
+	.splash-img {
+		max-width:100%;
+		margin-bottom:2rem;
+	}
+}
+button img {
+	display:inline;
+}
+.splash-content {
+	text-align:center;
+	margin:0 auto;
+	padding:10%;
+}
+button {
+	// display:block;
+	border:0;
+	padding:10px;
+	background: $orange;
+	color:$white;
+	width: 20%;
+	text-transform:uppercase;
+	margin:5rem;
+	img {
+		margin:0 5px 0 0;
+	}
+	
+}
+// .profiles,
+.gallery,
+.services,
+.breakfast,
+.footer {
+	padding:2% 10%;
+}
+.services {
+	background: $white;
+}
+.profiles {
+	background: $cream;
+}
+.gallery,
+.breakfast,
+footer {
+	background: $main-black;
+}
+// =========================
+// ===end of splash and section styles
+.h2-light {
+	@include headers(40px, $white);
+}
+// =========================
+// =========================
+// ===start of Gallery styles
+.gallery {
+	text-align:center;
+	p {
+		font-style:italic;
+	}
+}
+.gallery p,
+.services p {
+	@include section-center; 
+}
+.gallery ul {
+	padding:0;
+	margin:3rem;
+	border:1px solid $gray;
+	text-align:center;
+	display:inline-block;
+	li {
+		display:inline-block;
+		a {
+			padding:5px 10px;
+			text-transform: uppercase;
+			text-align:center;
+			color:white;
+			text-decoration:none;
+			display:inline-block;
+			margin:0.5rem;
+			border-right:1px solid $gray;
+		}
+	}
+}
+.gallery-container {
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		h4,
+		p {
+			color:$cream;
+		}
+	}
+.photo-container {
+	position:relative;
+	min-width:20%;
+	min-height:130px;
+	img {
+		width:100%;
+		max-width: 203px;
+		max-height:135px;
+	}
+}
+
+.photo-overlay h4 {
+	margin-top:23%;
+}
+.photo-overlay {
+	width:100%;
+	height:136px;
+	background: rgba(0, 0, 0, 0.5 );
+	position:absolute;
+	z-index:10;
+	top:0;
+	left:0;
+	opacity:0;
+	transition:0.25s ease;
+	img {
+		margin-left:3px;
+		margin-top:-4px;
+		width:10%;
+		float:left;
+	}
+}
+.photo-overlay:hover {
+	opacity:1;
+}
+// =========================
+// ===start of services
+.services p {
+	color:$gray;
+}
+.meals-container {
+	display:flex;
+	flex-direction:row;
+	margin:3rem 0;
+	flex-wrap:wrap;
+}
+.meals {
+	width: 20%;
+	display:inline-block;
+	min-width:20%;
+	text-align:center;
+	margin:0 1rem;
+	p {
+		line-height:1.5;
+	}
+}
+// =========================
+
+@media (max-width:950px){
+	nav {
+		height: 100vh;
+		background: black;
+		width: 300px;
+		position:absolute;
+		top:0;
+		left:-300px;
+		margin:0;
+		transition:all 0.5s ease;
+	}
+	#nav-check:checked + nav {
+		left:0;
+	}
+	section {
+		position:relative;
+		left:0;
+		transition: all 0.5s ease;
+	}
+	#nav-check:checked ~ section {
+		left:300px;
+	}
+	.footer-container {
+		bottom:0;
+	}
+
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.column {
+		float:none;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+
+	
+
+	.profiles-left {
+		text-align:center;
+		padding-left:5%;
+		width: 100%;
+		padding-bottom:3rem;
+		img {
+			width: 60%;
+			float:none;
+			margin-bottom:2rem;
+		}
+	}
+	.profiles-right {
+		display:none;
+	}
+	.gallery img {
+		display:inline-block;
+		// width:48%;
+	}
+	.gallery-container {
+		justify-content:space-between;
+	}
+	.column {
+		float:none;
+		width: 90%;
+	}
+	.meals {
+		width: 40%;
+	}
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}
+
+
+
+
+
+
+
+
+
