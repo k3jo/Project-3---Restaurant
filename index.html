@@ -7,92 +7,140 @@
 	<!-- ===FONTS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 	<!-- ===STYLE.CSS -->
 	<link rel="stylesheet" href="style.css">
 	<!-- ===mobile -->
 	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<!-- favicon -->
+	<link type="image/png" href="favicon.png" rel="icon">
 
 </head>
 <body>
-	<input type="checkbox" id="nav-check">
-	<nav>
-		<label for="toggle"><!-- ☰ Menu --></label>
-		<div class="nav-wrapper"> 
-			<h1>
-				<img src="assets/logo2.png" alt="The Gourmet Logo">
-			</h1>
-			<ul>
-				<li><a href="#nav-home">
-					<i class="fa fa-chevron-right"></i>
-					     Home</a></li>
-				<li><a href="#nav-services">
-					<i class="fa fa-chevron-right"></i>
-					     Services</a></li>
-				<li><a href="#nav-projects">
-					<i class="fa fa-chevron-right"></i>
-					     Projects</a></li>
-				<li><a href="#nav-about-me">
-					<i class="fa fa-chevron-right"></i>About 
-					     Me</a></li>
-				<li><a href="#nav-blog">
-					<i class="fa fa-chevron-right"></i>
-					     Blog</a></li>
-				<li><a href="#nav-contacts">
-					<i class="fa fa-chevron-right"></i>
-					     Contacts</a></li>
-					     <!-- I put spaces in between chevron/text, which is not right, how to do it correctly? -->
-			</ul>
-			<span class="orange"><i class="fa fa-twitter"></i></span>
-			<p>
-				<span class="orange">@louisdesign</span>
-				 Check out Marine Theme 
-				 <span class="link">http://themeforest.net/user/louisdesign/portfolio</span>
-			</p>
-			<p>12 minutes ago</p>
-			<div class="nav-social">
-				<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
-				<a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
-				<a href="http://skype.com"><i class="fa fa-skype"></i></a>	
-			</div>
-			<div class="nav-copyright">
-				<p>&copy 2014 The Gourmet.</p>
-				<p class="allrights">All Rights Reserved</p>
-			</div>
-		</div><!--  end of nav-wrapper -->
-	</nav>
-
-
 	<section class="splash" id="nav-home">
-		<label for="nav-check">Menu</label>
-		<div class="wrapper clearfix">
-			<div class="splash-content">
-				<div class="splash-img"><img src="assets/genuine.png" alt="image for the word genuine"></div>
-				<div class="splash-img"><img src="assets/foodpassion.png" alt="image for the word food passion"></div>
-				<div class="splash-img"><img src="assets/cookingsince.png" alt="image for phrase:cooking since"></div>
-				<div class="splash-img">
-					<button>
-						<img src="assets/eye.png" class="button-img"alt="eye icon">
-						View Details
-					</button>
+		<!-- <input type="checkbox" id="nav-check"> -->
+
+		<nav class="default-nav">
+			<a href="#" class="menu-trigger"><i class="fa fa-bars"></i>Menu</a>
+			<div class="nav-wrapper"> 
+				<h1>
+					<img src="assets/logo2.png" alt="The Gourmet Logo">
+				</h1>
+				<ul>
+					<li><a href="#nav-home">
+						<i class="fa fa-chevron-right"></i>
+						     Home</a></li>
+					<li><a href="#nav-services">
+						<i class="fa fa-chevron-right"></i>
+						     Services</a></li>
+					<li><a href="#nav-projects">
+						<i class="fa fa-chevron-right"></i>
+						     Projects</a></li>
+					<li><a href="#nav-about-me">
+						<i class="fa fa-chevron-right"></i>About 
+						     Me</a></li>
+					<li><a href="#nav-blog">
+						<i class="fa fa-chevron-right"></i>
+						     Blog</a></li>
+					<li><a href="#nav-contacts">
+						<i class="fa fa-chevron-right"></i>
+						     Contacts</a></li>
+						     <!-- I put spaces in between chevron/text, which is not right, how to do it correctly? -->
+				</ul>
+				<span class="orange"><i class="fa fa-twitter"></i></span>
+				<p>
+					<a href="#"><span class="orange">@louisdesign</span></a>
+					 Check out Marine Theme 
+					 <a href="#"><span class="link">http://themeforest.net/user/louisdesign/portfolio</span></a>
+				</p>
+				<p>12 minutes ago</p>
+				<div class="nav-social">
+					<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+					<a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+					<a href="http://skype.com"><i class="fa fa-skype"></i></a>	
 				</div>
+				<div class="nav-copyright">
+					<p>&copy 2014 The Gourmet.</p>
+					<p class="allrights">All Rights Reserved</p>
+				</div>
+			</div><!--  end of nav-wrapper -->
+		</nav>
+		<div class="responsive-nav-container">
+			<a href="#" class="menu-trigger"><i class="fa fa-bars"></i>Menu</a>
+			<nav class="responsive-nav">
 				
-			</div> <!-- ===end of splash-content -->
-		</div><!--  ===end of wrapper -->
+				<div class="nav-wrapper"> 
+					<h1>
+						<img src="assets/logo2.png" alt="The Gourmet Logo">
+					</h1>
+					<ul>
+						<li><a href="#nav-home">
+							<i class="fa fa-chevron-right"></i>
+							     Home</a></li>
+						<li><a href="#nav-services">
+							<i class="fa fa-chevron-right"></i>
+							     Services</a></li>
+						<li><a href="#nav-projects">
+							<i class="fa fa-chevron-right"></i>
+							     Projects</a></li>
+						<li><a href="#nav-about-me">
+							<i class="fa fa-chevron-right"></i>About 
+							     Me</a></li>
+						<li><a href="#nav-blog">
+							<i class="fa fa-chevron-right"></i>
+							     Blog</a></li>
+						<li><a href="#nav-contacts">
+							<i class="fa fa-chevron-right"></i>
+							     Contacts</a></li>	    
+					</ul>
+
+<!-- 					<div class="nav-copyright">
+						<p>&copy 2014 The Gourmet.</p>
+						<p class="allrights">All Rights Reserved</p>
+					</div> -->
+				</div><!--  end of nav-wrapper -->
+			</nav>
+		</div> <!-- end of responsive-nav-container -->
+			<!-- <label for="nav-check">Menu</label> -->
+			<div class="wrapper clearfix">
+				<div class="splash-content">
+					<div class="splash-img s1"><img src="assets/genuine.png" alt="image for the word genuine"></div>
+					<div class="splash-img s2"><img src="assets/foodpassion.png" alt="image for the word food passion"></div>
+					<div class="splash-img s3"><img src="assets/cookingsince.png" alt="image for phrase:cooking since"></div>
+					<div class="splash-img">
+						<button>
+							<!-- <div class="button-content"> -->
+								<img src="assets/eye.png" class="button-img"alt="eye icon">
+								<p>View Details</p>
+							<!-- </div> -->
+						</button>
+					</div>
+					
+				</div> <!-- ===end of splash-content -->
+			</div><!--  ===end of wrapper -->
 	</section><!--  ===end of splash -->
 
 
 	<section class="profiles" id="nav-about-me">
 		<div class="profile-wrapper clearfix">
 			<div class="profiles-left">
-				<h2><span>About</span> Our Chefs</h2>
-				<img src="assets/chef-cropped.jpg" alt="picture of chef Gustave">
-				<h4>Gustave Berneir</h4>
-				<p>Executive Chef</p>
+				<h2 class="profile-header"><span>About</span> Our Chefs</h2>
+				<div class="profile-container clearfix">
+					<img src="assets/chef-cropped.jpg" alt="picture of chef Gustave">
+					<div class="profile-info">
+						<h4>Gustave Berneir</h4>
+						<p class="role">Executive Chef</p>
+					</div><!--  end of profile-info -->
+				</div> <!-- end of profile-container clearfix -->
 				<blockquote>
 					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 				</blockquote>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ad fugit alias expedita. Pariatur repellat odit esse quaerat dolor repudiandae earum, nisi maiores ab iure, qui rem quis eveniet provident.</p>
-			</div>
+				<div class="scroll-arrows-container">
+					<p class="scroll-arrows"><i class="fa fa-angle-left"></i><!-- &ensp;&ensp; --><i class="fa fa-angle-right"></i></p>
+				</div>
+			</div> <!-- end of profiles-left -->
 			<div class="profiles-right">
 				<img src="assets/chef.jpg" alt="chef picture">
 			</div>
@@ -103,20 +151,24 @@
 	<section class="gallery" id="nav-projects">
 		<div class="wrapper clearfix">
 			<h2 class="h2-light"><span>Our</span> Gallery</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ad fugit alias expedita.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ad fugit alias expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ad fugit alias expedita.</p>
 
+			<div class="gallery-filter">
+				<ul class="filter-container">
 
-			<ul class="filter-container">
-				<li><a href="#" data-filter="*" class="current"></a>All</li>
-				<li><a href="#" data-filter=".meat">Meat</a></li>
-				<li><a href="#" data-filter=".fish">Fish</a></li>
-				<li><a href="#" data-filter=".dessert">Dessert</a></li>
-				<li><a href="#" data-filter=".vegetarian">Vegetarian</a></li>
-			</ul>
+					<li class="photo-trigger">☰ Category</li>				
+					<li><a href="#" data-filter="*" class="current">All</a></li>
+					<li><a href="#" data-filter=".meat">Meat</a></li>
+					<li><a href="#" data-filter=".fish">Fish</a></li>
+					<li><a href="#" data-filter=".dessert">Dessert</a></li>
+					<li><a href="#" data-filter=".vegetarian" class="disabled">Vegetarian</a></li>
+				</ul>
+			</div>
 
 		</div><!--  end of wrapper -->
 
 			<div class="gallery-container">
+
 				<div class="photo-container">
 					<img src="assets/cereal.jpg" alt="bowl of cereal" class="vegetarian">
 					<div class="photo-overlay">
@@ -250,10 +302,10 @@
 				
 			</div><!--  end of gallery-container -->
 
-	</section> end of <!-- gallery -->
+	</section> <!-- end of gallery -->
 
 
-	<section class="services">
+	<section class="services" id="nav-services">
 		<div class="wrapper clearfix">
 			<h2><span>Our</span> Services</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nostrum laborum repellendus qui, maiores libero.</p>
@@ -285,10 +337,15 @@
 
 	<section class="breakfast">
 		<div class="wrapper clearfix">
-			<h2 class="h2-light"><span>Our</span> Breakfast</h2>
-
-			<div class="column-container">
-				<div class="column">
+			<div class="breakfast-header">
+				<h2 class="h2-light"><span>Our</span> Breakfast</h2>
+				<div class="scroll-arrows-container">
+					<p class="scroll-arrows"><i class="fa fa-angle-left"></i><i class="fa fa-angle-right"></i></p>
+				</div> <!-- end of scroll-arrows-container -->
+			</div> <!-- end of breakfast-header -->
+			
+			<div class="column-container clearfix">
+				<div class="column clearfix">
 					<div class="item-container">
 						<div class="item">
 							<h5>Soft-Boiled Organic Egg</h5>
@@ -320,7 +377,7 @@
 						<div class="item">
 							<h5>Eggs Benedict</h5>
 							<div class="item-detail-price">
-								<p class="name-detail">with homefries"</p>
+								<p class="name-detail">with homefries</p>
 								<div class="dots"></div>
 								<p class="price">22.00</p>
 							</div><!-- ===end of item-detail-price -->
@@ -337,8 +394,8 @@
 					</div><!-- end of column -->
 				</div><!--  end of column-container -->
 
-				<div class="column-container">
-					<div class="column">
+				<div class="column-container clearfix">
+					<div class="column clearfix">
 						<div class="item-container">
 							<div class="item">
 								<h5>Soft-Boiled Organic Egg</h5>
@@ -387,13 +444,14 @@
 						</div><!-- end of column -->
 			
 					</div><!--  end of column-container -->
+
+		</div> <!-- ===end of wrapper -->
 		<div class="button-container">
 			<button>
 				<img src="assets/eye.png" alt="eye icon">
-				View Details
+				<p>View Details</p>
 			</button>
 		</div> <!-- end of button-container -->
-		</div> <!-- ===end of wrapper -->
 
 	</section><!-- ===end of breakfast-->
 
@@ -403,31 +461,19 @@
 	</section>
 
 
-	<footer id="nav-contact">
+	<footer id="nav-contacts">
 		<div class="wrapper clearfix">
 			
 			<div class="footer-container">
 				<div class="details social-media">
 					<img src="assets/logo2.png" alt="The Gourmet Logo">
 					<div class="icons">
-						<a href="http://facebook.com">
-							<i class="fa fa-facebook"></i>
-						</a>
-						<a href="http://twitter.com">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a href="http://skype.com">
-							<i class="fa fa-skype"></i>
-						</a>
-						<a href="http://googleplus.com">
-							<i class="fa fa-google-plus"></i>
-						</a>
-						<a href="http://linkedin.com">
-							<i class="fa fa-linkedin"></i>
-						</a>
-						<a href="http://instagram.com">
-							<i class="fa fa-instagram"></i>
-						</a>
+						<a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+						<a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+						<a href="http://skype.com"><i class="fa fa-skype"></i></a>
+						<a href="http://googleplus.com"><i class="fa fa-google-plus"></i></a>
+						<a href="http://linkedin.com"><i class="fa fa-linkedin"></i></a>
+						<a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
 						
 					</div> <!-- ===end of icons -->
 				</div><!--  ===end of details social-media -->
@@ -469,7 +515,7 @@
 				</div><!-- ===end of gourmet-full-details -->
 
 				<div class="copyright">
-					<p>The Gourmet. All Rights Reserved</p>
+					<p>&copy; The Gourmet. All Rights Reserved</p>
 				</div>
 			</div><!-- ==end of footer-container -->
 		</div> <!-- end of wrapper -->
@@ -477,7 +523,11 @@
 
 	
 	<!-- ===SMOOTH SCROLL -->
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- main script -->
+	<script src="main.js"></script>
 
     <script src="https://rawgithub.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
 
@@ -493,6 +543,10 @@
 	<!-- ===ISOTOPE -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 	<script src="isotope/isotope.pkgd.min.js"></script>
+
+	<!-- CREDITS -->
+	<!-- favicon credit to Gregor Črešnar, from thenounproject.com -->
+	<!-- splash image obtained from unsplash.com -->
 	
 
 

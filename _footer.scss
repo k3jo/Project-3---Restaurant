@@ -9,11 +9,11 @@ footer p {
 	text-align:center;
 	// flex-wrap:wrap;
 	position:relative;
-	bottom:140px;
+	bottom:2rem;
 }
 .details {
 	display:inline-block;
-	padding:1.5rem;
+	padding:4.5rem 1.5rem;
 	img {
 		display:inline-block;
 	}
@@ -22,6 +22,9 @@ footer p {
 	display:inline-block;
 	color:#70838E;
 	padding:0.5rem;
+	&:hover {
+		color:white;
+	}
 }
 .contact-container {
 	background: white;
@@ -44,6 +47,9 @@ footer p {
 }
 .map {
 	position:relative;
+	img {
+		max-width:100%;
+	}
 }
 .mapmarker {
 	position:absolute;
@@ -68,6 +74,11 @@ textarea {
 	width: 40%;
 	margin-top:1rem;
 	padding:15px;
+	&:hover {
+		background: $cream;
+		transition:1s;
+		color:black;
+	}
 }
 .gourmet-full-details {
 	text-align:left;

@@ -1,45 +1,86 @@
 // VARIABLES - RESTAURANT.PSD PROJECT
 
+
+
 .nav-wrapper {
 	margin:0 auto;
-	width: 91%
+	width: 91%;
+	p a {
+		text-decoration:none;
+	}
 }
 nav ul {
 	margin:0;
 	padding:0;
+	margin-left:22%;
+}
+ul li .fa {
+	display:inline;
+	color:$gray;
 }
 nav {
-	position:fixed;
+	position:absolute;
 	background: rgba($main-black, 0.8);
 	width: 15%;
 	height:100vh;
-	// border-right:1px solid white;
 	z-index:100;
 	top:0;
 	li {
 		display:block;
 		list-style-type:none;
 		padding-left:2rem;
+		padding: 10px 0 10px 0;
+		// effect starts below
+			
 	a {
-		margin:1rem;
+		margin:0.5rem;
 		padding:3px;
-		display:block;
+		display:inline;
 		color:$gray;
 		text-decoration: none;
-		p:last-child{
-			margin-bottom:2rem;
-		}
+		vertical-align: middle;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-osx-font-smoothing: grayscale;
+		position: relative;
+		overflow: hidden;
+		text-transform:uppercase;
+		font-weight:300;
+		// p:last-child{
+		// 	margin-bottom:2rem;
+		// }
 		}
 	}
 }
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: white;
+  height: 1px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+li a:hover:before, a:focus:before, a:active:before {
+  right: 0;
+	
+}
 nav ul li a:hover {
-	background:$orange;
+	// background:$orange;
 	color:white;
 }
-ul li .fa {
-	display:inline;
-	color:$gray;
-}
+
+// end of hover effect
 
 .fa {
 	display:block;
@@ -82,10 +123,38 @@ div.nav-social{
 		@include social-media-size;
 	}
 }
+.nav-social a .fa:hover {
+	color:white;
+}
 .nav-copyright p{
 	margin:0;
 	color:$gray;
+	font-size:10px;
 }
 .allrights {
 	text-transform:uppercase;
+}
+
+// MOST OF RESPONSIVE NAV
+.menu-trigger {
+	color:$orange;
+	text-decoration:none;
+	font-size: 20px;
+	padding:1rem;
+	display:none;
+	// position:absolute;
+	.fa {
+		display:inline-block;
+	}
+}
+.responsive-nav-container,
+.responsive-nav{
+	display:none;
+}
+.responsive-nav .nav-copyright {
+	margin-top:1rem;
+}
+.responsive-nav h1 {
+	margin-top:0;
+	padding-top:1rem;
 }

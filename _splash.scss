@@ -1,0 +1,59 @@
+// SPLASH STYLES
+
+.splash {
+	background: linear-gradient(rgba(36, 41, 45, 0.6), rgba(36, 41, 45, 0.6)), url(assets/bg-image.jpeg);
+	background-size:cover;
+	height: 100vh;
+	position:relative;
+	.splash-img img:not(.button-img) {
+		width:100%;
+		margin-bottom:2rem;
+		// margin: 0 auto;
+	}
+	.s1, .s2, .s3 {
+		margin: 0 auto;
+	}
+	.s1 {
+		width: 40%;
+	}
+	.s2 {
+		width: 70%;
+	}
+	.s3 {
+		width: 50%;
+	}
+}
+.splash-content {
+	text-align:center;
+	margin:0 auto;
+	padding:10%;
+	// width: 60%;
+
+}
+
+button {
+	border:0;
+	padding:10px;
+	background: $orange;
+	color:$white;
+	width: 20%;
+	text-transform:uppercase;
+	margin:5rem auto;
+	text-align:center;
+	border-radius:2px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	img {
+		margin:5px 5px 0 0;
+
+		p {
+			// float:left;
+		}
+	}
+	
+}
+button p {
+	font-size:10px;
+	text-align:left;
+}

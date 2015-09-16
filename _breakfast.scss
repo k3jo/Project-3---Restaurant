@@ -1,12 +1,23 @@
 // ===start of breakfast
 
-// .column-container {
-// 	display:flex;
-// 	flex-direction:row;
-// }
+.breakfast {
+	background: linear-gradient(rgba(36, 41, 45, 0.8), rgba(36, 41, 45, 0.8)), url("assets/restaurant-pic.jpg") fixed no-repeat; 
+	background-size:cover;
+}
+// header styling
+.breakfast-header{
+	position:relative;
+}
+.breakfast .scroll-arrows-container {
+	position:absolute;
+	top:-60%;
+	right:3%;
+}
+
+// breakfast styling
 .column {
-	display:flex;
-	flex-direction:row;
+	// display:flex;
+	// flex-direction:row;
 	float:left;
 	width:50%;
 }
@@ -22,10 +33,14 @@
 	margin-left:0;
 	margin-right:1rem;
 	padding:1rem;
+	flex-wrap:wrap;
 }
 .item-detail-price{
 	display:flex;
 	justify-content:space-between;
+	p {
+		font-style:italic;
+	}
 }
 .name {
 	@include dish-name();

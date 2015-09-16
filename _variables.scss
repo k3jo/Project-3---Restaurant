@@ -6,6 +6,7 @@ $cream: rgb(235, 229, 215);
 $orange: rgb(206, 81, 17);
 $white: white;
 $gray: #70838E;
+$othergray: #323C3F;
 
 // ============== start of nav
 @mixin social-media-size (){
@@ -18,13 +19,13 @@ $gray: #70838E;
 	text-transform:capitalize;
 	font-size:$font-size;
 	color: $color;
-	text-align:center;
+	// text-align:center;
 }
 @mixin headers-alt($font-size,$color){
-	font-family: Times New Roman, serif;
+	font-family: 'Playfair Display', serif;
 	text-transform:capitalize;
 	font-size:$font-size;
-	color: $color;
+	// color: $color;
 }
 @mixin section-center(){
 	text-align:center;

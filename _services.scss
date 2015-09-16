@@ -1,0 +1,21 @@
+// =========================
+// ===start of services
+.services p {
+	color:$gray;
+}
+.meals-container {
+	display:flex;
+	flex-direction:row;
+	margin:3rem 0;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
+.meals {
+	width: 20%;
+	min-width:20%;
+	text-align:center;
+	margin:0 1rem;
+	p {
+		line-height:1.5;
+	}
+}

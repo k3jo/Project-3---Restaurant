@@ -1,7 +1,10 @@
 @import 'setup';
 @import 'variables';
 @import 'navigation';
+@import 'splash';
 @import 'profiles';
+@import 'gallery';
+@import 'services';
 @import 'breakfast';
 @import 'footer';
 
@@ -9,22 +12,39 @@ body {
 	font-family:sans-serif;
 	color:white;
 	font-size:12px;
+	font-family: 'Open Sans', sans-serif;
+	background:$main-black;
 }
 h1 {
 	@include headers(20px, black);
 }
+nav h1 {
+	text-align:center;
+}
+// H2 STYLES
 h2 {
-	@include headers(40px, black);
+	@include headers(50px, black);
 }
 h2 span {
 	color:$orange;
 }
+.h2-light {
+	@include headers(50px, $cream);
+	text-align:center;
+}
+.services h2,
+.contact-container h2 {
+	text-align:center;
+}
+// end of H2s
 h3 {
 	@include headers-alt(20px,$orange);
+	color:$orange;
 }
 h4 {
-	@include headers-alt(20px, $main-black);
+	@include headers-alt(25px,$main-black);
 	margin:0;
+	color:$main-black;
 }
 h5 {
 	@include headers-alt(20px, $white);
@@ -38,36 +58,17 @@ h5 {
 #nav-check {
 	display:none;
 }
-.splash {
-	background: url(assets/cookies.jpg);
-	background-size:cover;
-	height: 100vh;
-	.splash-img {
-		max-width:100%;
-		margin-bottom:2rem;
+// ARROWS
+.scroll-arrows .fa {
+	display:inline-block;
+	font-size:3rem;
+	&:hover {
+		color:$orange;
+		transition:all 0.5s ease;
 	}
 }
-button img {
-	display:inline;
-}
-.splash-content {
-	text-align:center;
-	margin:0 auto;
-	padding:10%;
-}
-button {
-	// display:block;
-	border:0;
-	padding:10px;
-	background: $orange;
-	color:$white;
-	width: 20%;
-	text-transform:uppercase;
-	margin:5rem;
-	img {
-		margin:0 5px 0 0;
-	}
-	
+.scroll-arrows .fa-angle-left {
+	margin-right:1rem;
 }
 // .profiles,
 .gallery,
@@ -83,136 +84,37 @@ button {
 	background: $cream;
 }
 .gallery,
-.breakfast,
 footer {
 	background: $main-black;
 }
-// =========================
-// ===end of splash and section styles
-.h2-light {
-	@include headers(40px, $white);
-}
-// =========================
-// =========================
-// ===start of Gallery styles
-.gallery {
-	text-align:center;
-	p {
-		font-style:italic;
-	}
-}
-.gallery p,
-.services p {
-	@include section-center; 
-}
-.gallery ul {
-	padding:0;
-	margin:3rem;
-	border:1px solid $gray;
-	text-align:center;
-	display:inline-block;
-	li {
-		display:inline-block;
-		a {
-			padding:5px 10px;
-			text-transform: uppercase;
-			text-align:center;
-			color:white;
-			text-decoration:none;
-			display:inline-block;
-			margin:0.5rem;
-			border-right:1px solid $gray;
-		}
-	}
-}
-.gallery-container {
-		display:flex;
-		flex-direction:row;
-		flex-wrap:wrap;
-		h4,
-		p {
-			color:$cream;
-		}
-	}
-.photo-container {
-	position:relative;
-	min-width:20%;
-	min-height:130px;
-	img {
-		width:100%;
-		max-width: 203px;
-		max-height:135px;
-	}
-}
 
-.photo-overlay h4 {
-	margin-top:23%;
-}
-.photo-overlay {
-	width:100%;
-	height:136px;
-	background: rgba(0, 0, 0, 0.5 );
-	position:absolute;
-	z-index:10;
-	top:0;
-	left:0;
-	opacity:0;
-	transition:0.25s ease;
-	img {
-		margin-left:3px;
-		margin-top:-4px;
-		width:10%;
-		float:left;
+
+
+
+// =========================
+// =========================
+// @media (max-width:1300px){
+// 	nav h1 {
+// 		padding-left:25%;
+// 	}
+// }
+// @media (max-width:1280px){
+// 	nav h1 {
+// 		padding-left:0;
+// 	}
+// }
+@media (max-width:1000px){
+	// SERVICES STYLES
+	.meals {
+		width: 40%;
+		margin-bottom:2%;
 	}
 }
-.photo-overlay:hover {
-	opacity:1;
-}
-// =========================
-// ===start of services
-.services p {
-	color:$gray;
-}
-.meals-container {
-	display:flex;
-	flex-direction:row;
-	margin:3rem 0;
-	flex-wrap:wrap;
-}
-.meals {
-	width: 20%;
-	display:inline-block;
-	min-width:20%;
-	text-align:center;
-	margin:0 1rem;
-	p {
-		line-height:1.5;
-	}
-}
-// =========================
 
 @media (max-width:950px){
-	nav {
-		height: 100vh;
-		background: black;
-		width: 300px;
-		position:absolute;
-		top:0;
-		left:-300px;
-		margin:0;
-		transition:all 0.5s ease;
-	}
-	#nav-check:checked + nav {
-		left:0;
-	}
-	section {
-		position:relative;
-		left:0;
-		transition: all 0.5s ease;
-	}
-	#nav-check:checked ~ section {
-		left:300px;
-	}
+	// NAV STYLES:
+
+	// FOOTER STYLES:
 	.footer-container {
 		bottom:0;
 	}
@@ -221,31 +123,77 @@ footer {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+	// BREAKFAST STYLES
 	.column {
 		float:none;
+		width: 100%;
+	}
+}
+@media (max-width:800px){
+
+	// BREAKFAST STYLES
+	.breakfast .scroll-arrows-container {
+		position:relative;
+		text-align:center;
+		margin-bottom:2rem;
+	}
+	.fa {
+		margin-top:0;
 	}
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+	// NAV STYLES
 
+	.default-nav {
+		display:none;
+		// display:block;
+	}
+	.menu-trigger,
+	.responsive-nav-container {
+		display:block;
+	}
+	.responsive-nav {
+		position:relative;
+		background:black;
+		width:80%;
+	}
+	.responsive-nav-container {
+		position:absolute;
+		width: 70%;
+	}
 
 	
+	// PROFILE STYLES
+	.profiles {
+		padding:2% 10%;
 
+	}
+	.profile-wrapper {
+		width: 80%;
+	}
 	.profiles-left {
+		float:none;
 		text-align:center;
-		padding-left:5%;
+		padding-left:0;
 		width: 100%;
 		padding-bottom:3rem;
 		img {
 			width: 60%;
 			float:none;
 			margin-bottom:2rem;
+			margin-right:0;
 		}
+	}
+
+	.profile-info {
+		float:none;
 	}
 	.profiles-right {
 		display:none;
 	}
+	// GALLERY STYLES
 	.gallery img {
 		display:inline-block;
 		// width:48%;
@@ -253,14 +201,51 @@ footer {
 	.gallery-container {
 		justify-content:space-between;
 	}
+	// BREAKFAST STYLES
 	.column {
 		float:none;
 		width: 90%;
 	}
-	.meals {
+}
+@media (max-width:650px){
+	// SPLASH STYLES
+	button {
+		margin:1rem auto;
 		width: 40%;
 	}
+	// SERVICES STYLES
+	.meals {
+		width: 100%;
+	}
+	// GALLERY STYLES
+	.photo-container {
+		margin: 1% auto;
+	}
+	.gallery ul li a:not(.disabled) {
+		border-right:none;
+	}
+	.gallery ul{
+		width: 100%;
 
+	 li {
+		float:none;
+		margin:2rem;
+		a {
+			float:none;
+			margin:1rem;
+
+			}
+		}
+	}
+	.gallery ul li a:not(.photo-trigger) {
+		display:none;
+	}
+	.photo-trigger {
+		display:block;
+	}
+	// .gallery-filter ul li {
+	//   display:block;
+	// }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
