@@ -61,7 +61,7 @@ h5 {
 // ARROWS
 .scroll-arrows .fa {
 	display:inline-block;
-	font-size:3rem;
+	font-size:2rem;
 	&:hover {
 		color:$orange;
 		transition:all 0.5s ease;
@@ -69,6 +69,9 @@ h5 {
 }
 .scroll-arrows .fa-angle-left {
 	margin-right:1rem;
+}
+.fa {
+	margin-bottom:1rem;
 }
 // .profiles,
 .gallery,

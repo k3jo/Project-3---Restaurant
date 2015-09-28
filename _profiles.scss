@@ -4,19 +4,22 @@
 // ===start of Profiles page
 
 .profile-wrapper {
-	max-width:1200px;
+	// max-width:1200px;
 	margin:0 auto;
+	display:flex;
 	// padding-left:30%;
 }
 .profiles-left {
-	float:left;
+	display:flex;
+	flex-direction:column;
 	width:50%;
 	padding-left:17%;
-	// display:inline-block;
+	padding-right:5%;
 }
 .profiles p {
 	margin:0;
 	color:$gray;
+	margin-bottom:1rem;
 }
 .profiles-left img {
 	border-radius:50%;
@@ -34,8 +37,11 @@ blockquote {
 	margin:3rem 0;
 }
 .profiles-right {
-	float:right;
-	width:40%;
+	display:flex;
+	flex-direction:column;
+	width:50%;
+	background:url("assets/chef2.jpg");
+	background-size:cover;
 }
 .profiles .role  {
 	color:$orange;
