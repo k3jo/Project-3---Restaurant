@@ -5,6 +5,8 @@
 .nav-wrapper {
 	margin:0 auto;
 	width: 80%;
+	display:flex;
+	flex-direction:column;
 	p a {
 		text-decoration:none;
 	}
@@ -109,19 +111,24 @@ nav p {
 div.nav-social{
 	margin:0 auto;
 }
+
 .nav-social{
 	text-align:center;
 	width:70%;
-	padding:2rem 0;
+	padding:0.5rem 0;
 	border-top:1px solid $gray;
 	a{
 		text-decoration:none;
 	}
 	.fa {
 		display:inline;
-		margin:5px;
+		margin:3px;
 		@include social-media-size;
 	}
+}
+.nav-social-copyright {
+	align-self:flex-end;
+	margin:0 auto;
 }
 .nav-social a .fa:hover {
 	color:white;

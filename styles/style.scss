@@ -27,6 +27,8 @@ h1 img {
 // H2 STYLES
 h2 {
 	@include headers(50px, black);
+	margin:0;
+	padding-bottom:20px;
 }
 h2 span {
 	color:$orange;
@@ -74,7 +76,7 @@ h5 {
 	margin-right:1rem;
 }
 .fa {
-	margin-bottom:1rem;
+	// margin-bottom:1rem;
 }
 // .profiles,
 .gallery,

@@ -13,13 +13,14 @@
 	display:flex;
 	flex-direction:column;
 	width:50%;
-	padding-left:17%;
-	padding-right:5%;
+	padding:4% 5% 4% 17%;
+
 }
 .profiles p {
 	margin:0;
 	color:$gray;
-	margin-bottom:1rem;
+	// margin-bottom:1rem;
+	line-height:2;
 }
 .profiles-left img {
 	border-radius:50%;
@@ -34,13 +35,17 @@
 blockquote {
 	color:$main-black;
 	clear:both;
-	margin:3rem 0;
+	margin:1.5rem 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	font-style:italic;
+	line-height:2;
 }
 .profiles-right {
 	display:flex;
 	flex-direction:column;
 	width:50%;
-	background:url("assets/chef2.jpg");
+	background:url("../assets/chef2.jpg");
 	background-size:cover;
 }
 .profiles .role  {

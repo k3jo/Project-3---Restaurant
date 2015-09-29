@@ -164,6 +164,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .nav-wrapper {
   margin: 0 auto;
   width: 80%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav-wrapper p a {
@@ -277,7 +286,7 @@ div.nav-social {
 .nav-social {
   text-align: center;
   width: 70%;
-  padding: 2rem 0;
+  padding: 0.5rem 0;
   border-top: 1px solid #70838E;
 }
 
@@ -287,8 +296,15 @@ div.nav-social {
 
 .nav-social .fa {
   display: inline;
-  margin: 5px;
+  margin: 3px;
   font-size: 20px;
+}
+
+.nav-social-copyright {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+  margin: 0 auto;
 }
 
 .nav-social a .fa:hover {
@@ -341,7 +357,7 @@ div.nav-social {
 
 .splash .splash-img img:not(.button-img) {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .splash .s1, .splash .s2, .splash .s3 {
@@ -350,6 +366,7 @@ div.nav-social {
 
 .splash .s1 {
   width: 40%;
+  margin-bottom: 1rem;
 }
 
 .splash .s2 {
@@ -373,7 +390,7 @@ button {
   color: white;
   width: 20%;
   text-transform: uppercase;
-  margin: 5rem auto;
+  margin: 3rem auto;
   text-align: center;
   border-radius: 2px;
   display: -webkit-box;
@@ -417,14 +434,13 @@ button p {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  padding-left: 17%;
-  padding-right: 5%;
+  padding: 4% 5% 4% 17%;
 }
 
 .profiles p {
   margin: 0;
   color: #70838E;
-  margin-bottom: 1rem;
+  line-height: 2;
 }
 
 .profiles-left img {
@@ -442,7 +458,11 @@ button p {
 blockquote {
   color: #242d29;
   clear: both;
-  margin: 3rem 0;
+  margin: 1.5rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 2;
 }
 
 .profiles-right {
@@ -456,7 +476,7 @@ blockquote {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 50%;
-  background: url("assets/chef2.jpg");
+  background: url("../assets/chef2.jpg");
   background-size: cover;
 }
 
@@ -895,6 +915,8 @@ h2 {
   text-transform: capitalize;
   font-size: 50px;
   color: black;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 h2 span {
@@ -958,10 +980,6 @@ h5 {
 
 .scroll-arrows .fa-angle-left {
   margin-right: 1rem;
-}
-
-.fa {
-  margin-bottom: 1rem;
 }
 
 .gallery,
