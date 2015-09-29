@@ -1,7 +1,9 @@
 // SPLASH STYLES
+// @import 'variables';
+
 
 .splash {
-	background: linear-gradient(rgba(36, 41, 45, 0.6), rgba(36, 41, 45, 0.6)), url(assets/bg-image.jpeg);
+	background: linear-gradient(rgba(36, 41, 45, 0.6), rgba(36, 41, 45, 0.6)), url(../assets/bg-image.jpeg);
 	background-size:cover;
 	height: 100vh;
 	position:relative;

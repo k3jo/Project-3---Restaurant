@@ -163,7 +163,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 .nav-wrapper {
   margin: 0 auto;
-  width: 91%;
+  width: 80%;
 }
 
 .nav-wrapper p a {
@@ -332,8 +332,8 @@ div.nav-social {
 }
 
 .splash {
-  background: -webkit-linear-gradient(rgba(36, 41, 45, 0.6), rgba(36, 41, 45, 0.6)), url(assets/bg-image.jpeg);
-  background: linear-gradient(rgba(36, 41, 45, 0.6), rgba(36, 41, 45, 0.6)), url(assets/bg-image.jpeg);
+  background: -webkit-linear-gradient(rgba(36, 41, 45, 0.6), rgba(36, 41, 45, 0.6)), url(../assets/bg-image.jpeg);
+  background: linear-gradient(rgba(36, 41, 45, 0.6), rgba(36, 41, 45, 0.6)), url(../assets/bg-image.jpeg);
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -884,6 +884,10 @@ h1 {
 
 nav h1 {
   text-align: center;
+}
+
+h1 img {
+  width: 70%;
 }
 
 h2 {

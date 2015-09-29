@@ -21,6 +21,9 @@ h1 {
 nav h1 {
 	text-align:center;
 }
+h1 img {
+	width: 70%;
+}
 // H2 STYLES
 h2 {
 	@include headers(50px, black);
