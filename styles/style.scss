@@ -47,10 +47,11 @@ h3 {
 	color:$orange;
 }
 h4 {
-	@include headers-alt(25px,$main-black);
+	@include headers-alt(18px,$main-black);
 	margin:0;
 	color:$main-black;
 }
+
 h5 {
 	@include headers-alt(20px, $white);
 	margin:0;
@@ -75,11 +76,8 @@ h5 {
 .scroll-arrows .fa-angle-left {
 	margin-right:1rem;
 }
-.fa {
-	// margin-bottom:1rem;
-}
 // .profiles,
-.gallery,
+// .gallery,
 .services,
 .breakfast,
 .footer {

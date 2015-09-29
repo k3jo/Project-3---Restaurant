@@ -52,9 +52,10 @@
 }
 .dots {
 	display:inline;
-	border-bottom:1px dotted white;
+	border-bottom:2px dotted white;
 	flex:1;
-	height:23px;	
+	height:23px;
+
 }
 .price {
 	@include dish-price();
