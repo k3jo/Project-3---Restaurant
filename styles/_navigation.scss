@@ -1,7 +1,7 @@
 // VARIABLES - RESTAURANT.PSD PROJECT
 
 
-
+// DEFAULT NAV
 .nav-wrapper {
 	margin:0 auto;
 	width: 80%;
@@ -134,14 +134,17 @@ div.nav-social{
 .nav-social a .fa:hover {
 	color:white;
 }
-.nav-copyright p{
+.nav-copyright {
+	p{
 	margin:0;
 	color:$gray;
 	font-size:10px;
+	}
+	.allrights {
+		text-transform:uppercase;
+	}
 }
-.allrights {
-	text-transform:uppercase;
-}
+
 
 // MOST OF RESPONSIVE NAV
 .menu-trigger {
