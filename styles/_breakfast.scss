@@ -1,7 +1,7 @@
 // ===start of breakfast
 
 .breakfast {
-	background: linear-gradient(rgba(36, 41, 45, 0.8), rgba(36, 41, 45, 0.8)), url("assets/restaurant-pic.jpg") fixed no-repeat; 
+	background: linear-gradient(rgba(36, 41, 45, 0.8), rgba(36, 41, 45, 0.8)), url("../assets/restaurant-pic.jpg") fixed no-repeat; 
 	background-size:cover;
 }
 // header styling
@@ -54,11 +54,11 @@
 	display:inline;
 	border-bottom:2px dotted white;
 	flex:1;
-	height:23px;
+	height:20px;
 
 }
 .price {
-	@include dish-price();
+	@include dish-detail();
 }
 .button-container {
 	text-align:center;

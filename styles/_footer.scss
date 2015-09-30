@@ -4,10 +4,7 @@ footer p {
 	color:#70838E;
 }
 .footer-container {
-	// display:flex;
-	// flex-direction:row;
 	text-align:center;
-	// flex-wrap:wrap;
 	position:relative;
 	bottom:2rem;
 }
@@ -30,10 +27,8 @@ footer p {
 	background: white;
 	margin:0 auto;
 	padding:1rem;
-	// width: 90%;
 }
 .field-container {
-	// position:absolute;
 	margin:0 auto;
 }
 .icon-container {
@@ -88,19 +83,19 @@ textarea {
 	position:relative;
 }
 .address-container::before{
-	content: url(assets/locationicon.png);
+	content: url(../assets/locationicon.png);
 	display:inline-block;
 	position:absolute;
 	left:-12px;
 }
 .modem-container::before {
-	content: url(assets/mobile.png);
+	content: url(../assets/mobile.png);
 	display:inline-block;
 	position:absolute;
 	left:-12px;
 }
 .email-container::before {
-	content: url(assets/mail.png);
+	content: url(../assets/mail.png);
 	display:inline-block;
 	position:absolute;
 	left:-12px;

@@ -53,7 +53,7 @@ h4 {
 }
 
 h5 {
-	@include headers-alt(20px, $white);
+	@include headers-alt(16px, $white);
 	margin:0;
 }
 .wrapper {
@@ -93,8 +93,6 @@ h5 {
 footer {
 	background: $main-black;
 }
-
-
 
 
 // =========================
