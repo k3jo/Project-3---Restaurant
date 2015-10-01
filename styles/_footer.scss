@@ -30,6 +30,7 @@ footer p {
 .outer-contact-container {
 	position:relative;
 	top:-130px;
+	width: 45%;
 }
 .contact-container {
 	background: white;
@@ -58,7 +59,7 @@ footer p {
 .mapmarker {
 	position:absolute;
 	top:40%;
-	left:45%
+	left:50%
 }
 input {
 	@include contact-fields;
@@ -87,7 +88,7 @@ textarea {
 .gourmet-full-details {
 	text-align:left;
 	display:inline-block;
-	margin-left:3%;
+	margin-left:6%;
 	position:relative;
 	transform: translateY(-200px);
 }
