@@ -113,39 +113,39 @@ nav p {
 div.nav-social{
 	margin:0 auto;
 }
-
-.nav-social{
-	text-align:center;
-	width:70%;
-	padding:0.5rem 0;
-	border-top:1px solid $gray;
-	a{
-		text-decoration:none;
-	}
-	.fa {
-		display:inline;
-		margin:3px;
-		@include social-media-size;
-	}
-}
 .nav-social-copyright {
 	align-self:flex-end;
 	margin:0 auto;
 	padding-bottom:4%;
+	.nav-social{
+		text-align:center;
+		width:70%;
+		padding:0.5rem 0;
+		border-top:1px solid $gray;
+		a{
+			text-decoration:none;
+		}
+		.fa {
+			display:inline;
+			margin:2px;
+			@include social-media-size;
+		}
+	}
+	.nav-copyright {
+		p{
+		margin:0;
+		color:$gray;
+		font-size:10px;
+		}
+		.allrights p {
+			text-transform:uppercase;
+		}
+	}
 }
 .nav-social a .fa:hover {
 	color:white;
 }
-.nav-copyright {
-	p{
-	margin:0;
-	color:$gray;
-	font-size:10px;
-	}
-	.allrights {
-		text-transform:uppercase;
-	}
-}
+
 
 
 // MOST OF RESPONSIVE NAV

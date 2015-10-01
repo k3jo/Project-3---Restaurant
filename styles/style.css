@@ -288,23 +288,6 @@ div.nav-social {
   margin: 0 auto;
 }
 
-.nav-social {
-  text-align: center;
-  width: 70%;
-  padding: 0.5rem 0;
-  border-top: 1px solid #70838E;
-}
-
-.nav-social a {
-  text-decoration: none;
-}
-
-.nav-social .fa {
-  display: inline;
-  margin: 3px;
-  font-size: 20px;
-}
-
 .nav-social-copyright {
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
@@ -313,18 +296,35 @@ div.nav-social {
   padding-bottom: 4%;
 }
 
-.nav-social a .fa:hover {
-  color: white;
+.nav-social-copyright .nav-social {
+  text-align: center;
+  width: 70%;
+  padding: 0.5rem 0;
+  border-top: 1px solid #70838E;
 }
 
-.nav-copyright p {
+.nav-social-copyright .nav-social a {
+  text-decoration: none;
+}
+
+.nav-social-copyright .nav-social .fa {
+  display: inline;
+  margin: 2px;
+  font-size: 20px;
+}
+
+.nav-social-copyright .nav-copyright p {
   margin: 0;
   color: #70838E;
   font-size: 10px;
 }
 
-.nav-copyright .allrights {
+.nav-social-copyright .nav-copyright .allrights p {
   text-transform: uppercase;
+}
+
+.nav-social a .fa:hover {
+  color: white;
 }
 
 .menu-trigger {
@@ -575,7 +575,6 @@ blockquote {
 .photo-container {
   position: relative;
   width: 20%;
-  overflow: hidden;
 }
 
 .photo-container img {
@@ -601,7 +600,7 @@ blockquote {
 
 .photo-overlay .search-link {
   position: relative;
-  top: 8px;
+  top: 14%;
 }
 
 .photo-overlay p {
@@ -688,7 +687,7 @@ blockquote {
   width: 100%;
 }
 
-.item {
+.item-container .item {
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -722,15 +721,7 @@ blockquote {
   font-style: italic;
 }
 
-.name {
-  font-family: Times New Roman, serif;
-  font-size: 18px;
-  text-transform: capitalize;
-  color: white;
-  text-align: left;
-}
-
-.name-detail {
+.item-detail-price .name-detail {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -739,29 +730,37 @@ blockquote {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   margin: 9px 0;
   text-transform: lowercase;
   color: white;
 }
 
-.dots {
+.item-detail-price .dots {
   display: inline;
   border-bottom: 2px dotted white;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 20px;
+  height: 22px;
 }
 
-.price {
-  font-family: sans-serif;
+.item-detail-price .price {
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   margin: 9px 0;
   text-transform: lowercase;
   color: white;
+}
+
+.name {
+  font-family: Times New Roman, serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  text-align: left;
 }
 
 .button-container {
