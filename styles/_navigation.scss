@@ -20,10 +20,11 @@ nav ul {
 	margin:0;
 	padding:0;
 	margin-left:22%;
-}
-ul li .fa {
-	display:inline;
-	color:$gray;
+	margin-bottom:20%;
+	ul li .fa {
+		display:inline;
+		color:$gray;
+	}
 }
 nav {
 	position:absolute;
@@ -80,13 +81,11 @@ nav ul li a:before {
 }
 li a:hover:before, a:focus:before, a:active:before {
   right: 0;
-	
 }
 nav ul li a:hover {
 	// background:$orange;
 	color:white;
 }
-
 // end of hover effect
 
 
@@ -101,9 +100,6 @@ nav p {
 
 }
 .tweeting {
-	// display:flex;
-	// flex-direction:column;
-	// align-content:space-between;
 	padding:8% 0;
 	border-top:1px solid slategray;
 	border-bottom:1px solid slategray;

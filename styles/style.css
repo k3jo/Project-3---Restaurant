@@ -192,9 +192,10 @@ nav ul {
   margin: 0;
   padding: 0;
   margin-left: 22%;
+  margin-bottom: 20%;
 }
 
-ul li .fa {
+nav ul ul li .fa {
   display: inline;
   color: #70838E;
 }
@@ -437,6 +438,7 @@ button img {
 }
 
 button p {
+  font-family: 'Open Sans', sans-serif;
   font-size: 10px;
   text-align: left;
 }
@@ -463,18 +465,18 @@ button p {
   padding: 6% 2% 6% 20%;
 }
 
-.profiles p {
-  margin: 0;
-  color: #70838E;
-  line-height: 2;
-}
-
 .profiles-left img {
   border-radius: 50%;
   width: 20%;
   float: left;
   margin-right: 1rem;
   border: 1px solid white;
+}
+
+.profiles p {
+  margin: 0;
+  color: #70838E;
+  line-height: 2;
 }
 
 .profile-info {
@@ -490,6 +492,10 @@ blockquote {
   font-weight: 400;
   font-style: italic;
   line-height: 2;
+}
+
+p.about-chef {
+  margin-bottom: 10%;
 }
 
 .profiles-right {
@@ -681,7 +687,7 @@ blockquote {
 
 .breakfast .scroll-arrows-container {
   position: absolute;
-  top: -60%;
+  top: 0%;
   right: 3%;
 }
 
@@ -748,7 +754,7 @@ blockquote {
           justify-content: space-between;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  margin: 9px 0;
+  margin: 3px 0;
   text-transform: lowercase;
   color: white;
 }
@@ -760,13 +766,13 @@ blockquote {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 22px;
+  height: 16px;
 }
 
 .item-detail-price .price {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  margin: 9px 0;
+  margin: 3px 0;
   text-transform: lowercase;
   color: white;
 }
@@ -781,6 +787,21 @@ blockquote {
 
 .button-container {
   text-align: center;
+}
+
+.map {
+  position: relative;
+  text-align: center;
+}
+
+.map img {
+  max-width: 100%;
+}
+
+.mapmarker {
+  position: absolute;
+  top: 40%;
+  left: 50%;
 }
 
 footer p {
@@ -844,20 +865,6 @@ footer p {
   top: -22px;
   font-size: 20px;
   color: black;
-}
-
-.map {
-  position: relative;
-}
-
-.map img {
-  max-width: 100%;
-}
-
-.mapmarker {
-  position: absolute;
-  top: 40%;
-  left: 50%;
 }
 
 input {

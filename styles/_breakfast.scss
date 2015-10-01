@@ -10,14 +10,12 @@
 }
 .breakfast .scroll-arrows-container {
 	position:absolute;
-	top:-60%;
+	top:0%;
 	right:3%;
 }
 
 // breakfast styling
 .column {
-	// display:flex;
-	// flex-direction:row;
 	float:left;
 	width:50%;
 }
@@ -51,7 +49,7 @@
 		display:inline;
 		border-bottom:2px dotted white;
 		flex:1;
-		height:22px;
+		height:16px;
 	}
 	.price {
 		@include dish-detail();

@@ -13,19 +13,18 @@
 	flex-direction:column;
 	width:50%;
 	padding:6% 2% 6% 20%;
+	img {
+		border-radius:50%;
+		width: 20%;
+		float:left;
+		margin-right:1rem;
+		border:1px solid white;
+	}
 }
 .profiles p {
 	margin:0;
 	color:$gray;
-	// margin-bottom:1rem;
 	line-height:2;
-}
-.profiles-left img {
-	border-radius:50%;
-	width: 20%;
-	float:left;
-	margin-right:1rem;
-	border:1px solid white;
 }
 .profile-info {
 	float:left;
@@ -39,6 +38,9 @@ blockquote {
 	font-weight:400;
 	font-style:italic;
 	line-height:2;
+}
+p.about-chef {
+	margin-bottom:10%;
 }
 .profiles-right {
 	display:flex;
