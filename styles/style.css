@@ -817,11 +817,23 @@ footer p {
 .footer-container {
   text-align: center;
   position: relative;
-}
-
-.details {
-  display: inline-block;
-  padding: 4.5rem 1.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 5%;
 }
 
 .details img {
@@ -830,9 +842,6 @@ footer p {
 
 .social-media {
   width: 22%;
-  -webkit-transform: translateY(-200px);
-      -ms-transform: translateY(-200px);
-          transform: translateY(-200px);
 }
 
 .icons .fa {
@@ -847,7 +856,6 @@ footer p {
 
 .outer-contact-container {
   position: relative;
-  top: -130px;
   width: 45%;
 }
 
@@ -855,6 +863,8 @@ footer p {
   background: white;
   margin: 0 auto;
   padding: 1rem;
+  top: -45%;
+  margin-top: -100px;
 }
 
 .field-container {
@@ -868,7 +878,7 @@ footer p {
 .icon-container .fa {
   position: absolute;
   right: 20px;
-  top: -22px;
+  top: 8px;
   font-size: 20px;
   color: black;
 }
@@ -913,12 +923,9 @@ textarea {
 
 .gourmet-full-details {
   text-align: left;
-  display: inline-block;
   margin-left: 6%;
   position: relative;
-  -webkit-transform: translateY(-200px);
-      -ms-transform: translateY(-200px);
-          transform: translateY(-200px);
+  padding-left: 3%;
 }
 
 .address-container::before {
@@ -953,6 +960,10 @@ textarea {
 .email-container {
   text-indent: -2em;
   margin-bottom: 2rem;
+}
+
+.copyright {
+  text-align: center;
 }
 
 body {
@@ -1107,6 +1118,9 @@ footer {
   nav ul {
     margin-left: 10%;
   }
+  .photo-container .search-link {
+    top: 4%;
+  }
   .footer-container {
     bottom: 0;
   }
@@ -1219,6 +1233,12 @@ footer {
   }
   .photo-trigger {
     display: block;
+  }
+  .photo-container {
+    width: 45%;
+  }
+  .photo-container .search-link {
+    top: 14%;
   }
 }
 

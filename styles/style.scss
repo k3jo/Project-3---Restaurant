@@ -118,8 +118,10 @@ footer {
 	.nav-social-copyright {
 		margin:0 auto;
 	}
-
 }
+// @media (max-height:470px){
+
+// }
 @media (max-height:450px){
 	// NAV STYLEs
 	.nav-social {
@@ -142,6 +144,12 @@ footer {
 	nav ul {
 		margin-left:10%;
 	}
+	// GALLERY STYLES:
+	.photo-container {
+		.search-link {
+			top:4%;
+		}
+	}
 	// FOOTER STYLES:
 	.footer-container {
 		bottom:0;
@@ -156,6 +164,19 @@ footer {
 		float:none;
 		width: 100%;
 	}
+	// FOOTER STYLES
+	// .details {
+	// 	display:block;
+	// }
+	// .social-media, 
+	// .outer-contact-container, 
+	// .gourmet-full-details {
+	// 	margin:0 auto;
+	// }
+	// .social-media, 
+	// .gourmet-full-details {
+	// 	transform:translateY(0);
+	// }
 }
 @media (max-width:800px){
 
@@ -271,9 +292,13 @@ footer {
 	.photo-trigger {
 		display:block;
 	}
-	// .gallery-filter ul li {
-	//   display:block;
-	// }
+	// GALLERY STYLES
+	.photo-container {
+		width: 45%;
+		.search-link {
+			top:14%;
+		}
+	}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {

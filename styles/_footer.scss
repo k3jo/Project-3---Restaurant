@@ -18,17 +18,22 @@ footer p {
 .footer-container {
 	text-align:center;
 	position:relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:center;
+	padding-top:5%;
 }
 .details {
-	display:inline-block;
-	padding:4.5rem 1.5rem;
+	// display:inline-block;
+	// padding:4.5rem 1.5rem;
 	img {
 		display:inline-block;
 	}
 }
 .social-media {
 	width: 22%;
-	transform: translateY(-200px);
+	// transform: translateY(-200px);
 }
 .icons .fa {
 	display:inline-block;
@@ -40,13 +45,16 @@ footer p {
 }
 .outer-contact-container {
 	position:relative;
-	top:-130px;
+	// top:-130px;
 	width: 45%;
 }
 .contact-container {
 	background: white;
 	margin:0 auto;
 	padding:1rem;
+	// position:absolute;
+	top:-45%;
+	margin-top:-100px;
 }
 .field-container {
 	margin:0 auto;
@@ -56,7 +64,7 @@ footer p {
 	.fa {
 		position:absolute;
 		right:20px;
-		top:-22px;
+		top:8px;
 		font-size:20px;
 		color:black;
 	}
@@ -88,10 +96,11 @@ textarea {
 }
 .gourmet-full-details {
 	text-align:left;
-	display:inline-block;
+	// display:inline-block;
 	margin-left:6%;
 	position:relative;
-	transform: translateY(-200px);
+	padding-left:3%;
+	// transform: translateY(-200px);
 }
 .address-container::before{
 	content: url(../assets/locationicon.png);
@@ -121,4 +130,7 @@ textarea {
 .email-container {
 	text-indent: -2em;
 	margin-bottom:2rem;
+}
+.copyright {
+	text-align:center;
 }
