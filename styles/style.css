@@ -493,6 +493,10 @@ blockquote {
   color: #ce5111;
 }
 
+.gallery-photos {
+  text-align: center;
+}
+
 .gallery {
   text-align: center;
 }
