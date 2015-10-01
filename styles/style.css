@@ -1009,10 +1009,11 @@ h5 {
   margin-right: 1rem;
 }
 
+.gallery,
 .services,
 .breakfast,
 .footer {
-  padding: 2% 10%;
+  padding: 5% 10%;
 }
 
 .services {
