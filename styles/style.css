@@ -180,6 +180,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
           justify-content: space-between;
 }
 
+.nav-wrapper p {
+  font-size: 10px;
+}
+
 .nav-wrapper p a {
   text-decoration: none;
 }
@@ -255,11 +259,6 @@ nav ul li a:hover {
   color: white;
 }
 
-.fa {
-  display: block;
-  margin-top: 2rem;
-}
-
 nav p,
 nav .fa {
   text-align: center;
@@ -271,17 +270,31 @@ nav p {
   font-size: 12px;
 }
 
-.orange .fa {
-  font-size: 20px;
+.tweeting {
+  padding: 8% 0;
+  border-top: 1px solid slategray;
+  border-bottom: 1px solid slategray;
 }
 
-.orange,
-.orange .fa {
+.tweeting .orange,
+.tweeting .orange .fa {
   color: #ce5111;
 }
 
-.link {
+.tweeting .orange .fa {
+  font-size: 20px;
+}
+
+.tweeting .link {
   color: white;
+}
+
+.tweeting .fa {
+  display: block;
+}
+
+.tweeting .minutes {
+  text-transform: uppercase;
 }
 
 div.nav-social {
@@ -293,14 +306,13 @@ div.nav-social {
       -ms-flex-item-align: end;
           align-self: flex-end;
   margin: 0 auto;
-  padding-bottom: 4%;
+  padding-bottom: 15%;
 }
 
 .nav-social-copyright .nav-social {
   text-align: center;
   width: 70%;
   padding: 0.5rem 0;
-  border-top: 1px solid #70838E;
 }
 
 .nav-social-copyright .nav-social a {
@@ -311,6 +323,10 @@ div.nav-social {
   display: inline;
   margin: 2px;
   font-size: 20px;
+}
+
+.nav-social-copyright .nav-copyright {
+  margin-top: 20%;
 }
 
 .nav-social-copyright .nav-copyright p {

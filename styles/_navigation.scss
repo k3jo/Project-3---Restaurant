@@ -9,6 +9,9 @@
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
+	p {
+		font-size:10px;
+	}
 	p a {
 		text-decoration:none;
 	}
@@ -86,10 +89,7 @@ nav ul li a:hover {
 
 // end of hover effect
 
-.fa {
-	display:block;
-	margin-top:2rem;
-}
+
 nav p,
 nav .fa {
 	text-align:center;
@@ -100,28 +100,44 @@ nav p {
 	font-size:12px;
 
 }
-.orange .fa {
-	@include social-media-size;
+.tweeting {
+	// display:flex;
+	// flex-direction:column;
+	// align-content:space-between;
+	padding:8% 0;
+	border-top:1px solid slategray;
+	border-bottom:1px solid slategray;
+	.orange,
+	.orange .fa {
+		color:$orange;
+	}
+	.orange .fa {
+		@include social-media-size;
+	}
+	.link {
+		color:$white;
+	}
+	.fa {
+		display:block;
+	}
+	.minutes {
+		text-transform:uppercase;
+	}
 }
-.orange,
-.orange .fa {
-	color:$orange;
-}
-.link {
-	color:$white;
-}
+
+
 div.nav-social{
 	margin:0 auto;
 }
 .nav-social-copyright {
 	align-self:flex-end;
 	margin:0 auto;
-	padding-bottom:4%;
+	padding-bottom:15%;
 	.nav-social{
 		text-align:center;
 		width:70%;
 		padding:0.5rem 0;
-		border-top:1px solid $gray;
+		// border-top:1px solid $gray;
 		a{
 			text-decoration:none;
 		}
@@ -132,6 +148,7 @@ div.nav-social{
 		}
 	}
 	.nav-copyright {
+		margin-top:20%;
 		p{
 		margin:0;
 		color:$gray;
