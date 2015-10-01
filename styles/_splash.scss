@@ -7,13 +7,16 @@
 	background-size:cover;
 	height: 100vh;
 	position:relative;
-	.splash-img img:not(.button-img) {
+	.splash-img img:not(.button-img, .s2) {
 		width:100%;
 		margin-bottom:1rem;
 		// margin: 0 auto;
 	}
 	.s1, .s2, .s3 {
 		margin: 0 auto;
+		img {
+			width: 100%;
+		}
 	}
 	.s1 {
 		width: 40%;

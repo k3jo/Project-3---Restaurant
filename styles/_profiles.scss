@@ -42,13 +42,15 @@ blockquote {
 p.about-chef {
 	margin-bottom:10%;
 }
+.profiles .role  {
+	color:$orange;
+	font-size:11px;
+	line-height:1.2;
+}
 .profiles-right {
 	display:flex;
 	flex-direction:column;
 	width:50%;
 	background:url("../assets/chef2.jpg");
 	background-size:cover;
-}
-.profiles .role  {
-	color:$orange;
 }

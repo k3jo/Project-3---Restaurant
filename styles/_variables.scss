@@ -19,7 +19,7 @@ $othergray: #323C3F;
 	text-transform:capitalize;
 	font-size:$font-size;
 	color: $color;
-	// text-align:center;
+	font-weight:400;
 }
 @mixin headers-alt($font-size,$color){
 	font-family: 'Playfair Display', serif;

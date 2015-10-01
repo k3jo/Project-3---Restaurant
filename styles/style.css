@@ -272,7 +272,7 @@ nav p {
 }
 
 .tweeting {
-  padding: 8% 0;
+  padding: 15% 0;
   border-top: 1px solid slategray;
   border-bottom: 1px solid slategray;
 }
@@ -306,7 +306,7 @@ div.nav-social {
   -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
           align-self: flex-end;
-  margin: 0 auto;
+  margin: 10% auto;
   padding-bottom: 15%;
 }
 
@@ -378,13 +378,17 @@ div.nav-social {
   position: relative;
 }
 
-.splash .splash-img img:not(.button-img) {
+.splash .splash-img img:not(.button-img, .s2) {
   width: 100%;
   margin-bottom: 1rem;
 }
 
 .splash .s1, .splash .s2, .splash .s3 {
   margin: 0 auto;
+}
+
+.splash .s1 img, .splash .s2 img, .splash .s3 img {
+  width: 100%;
 }
 
 .splash .s1 {
@@ -498,6 +502,12 @@ p.about-chef {
   margin-bottom: 10%;
 }
 
+.profiles .role {
+  color: #ce5111;
+  font-size: 11px;
+  line-height: 1.2;
+}
+
 .profiles-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -511,10 +521,6 @@ p.about-chef {
   width: 50%;
   background: url("../assets/chef2.jpg");
   background-size: cover;
-}
-
-.profiles .role {
-  color: #ce5111;
 }
 
 .gallery-photos {
@@ -958,10 +964,7 @@ body {
 }
 
 h1 {
-  font-family: 'Great Vibes', cursive;
-  text-transform: capitalize;
-  font-size: 20px;
-  color: black;
+  margin: 10% 0;
 }
 
 nav h1 {
@@ -977,6 +980,7 @@ h2 {
   text-transform: capitalize;
   font-size: 50px;
   color: black;
+  font-weight: 400;
   margin: 0;
   padding-bottom: 20px;
 }
@@ -990,6 +994,7 @@ h2 span {
   text-transform: capitalize;
   font-size: 50px;
   color: #ebe5d7;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -1064,6 +1069,33 @@ footer {
   background: #242d29;
 }
 
+@media (max-height: 610px) {
+  .tweeting {
+    display: none;
+  }
+}
+
+@media (max-height: 550px) {
+  .splash-content {
+    padding: 5% 10%;
+  }
+}
+
+@media (max-height: 510px) {
+  nav ul {
+    margin-bottom: 10%;
+  }
+  .nav-social-copyright {
+    margin: 0 auto;
+  }
+}
+
+@media (max-height: 450px) {
+  .nav-social {
+    display: none;
+  }
+}
+
 @media (max-width: 1000px) {
   .meals {
     width: 40%;
@@ -1072,6 +1104,9 @@ footer {
 }
 
 @media (max-width: 950px) {
+  nav ul {
+    margin-left: 10%;
+  }
   .footer-container {
     bottom: 0;
   }
