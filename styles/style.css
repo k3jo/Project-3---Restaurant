@@ -615,6 +615,7 @@ blockquote {
 
 .services p {
   color: #70838E;
+  line-height: 2;
 }
 
 .meals-container {
@@ -768,7 +769,6 @@ footer p {
 .footer-container {
   text-align: center;
   position: relative;
-  bottom: 2rem;
 }
 
 .details {
@@ -780,6 +780,10 @@ footer p {
   display: inline-block;
 }
 
+.social-media {
+  width: 22%;
+}
+
 .icons .fa {
   display: inline-block;
   color: #70838E;
@@ -788,6 +792,11 @@ footer p {
 
 .icons .fa:hover {
   color: white;
+}
+
+.outer-contact-container {
+  position: relative;
+  top: -130px;
 }
 
 .contact-container {

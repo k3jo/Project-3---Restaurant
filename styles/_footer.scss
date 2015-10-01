@@ -6,7 +6,7 @@ footer p {
 .footer-container {
 	text-align:center;
 	position:relative;
-	bottom:2rem;
+	// bottom:2rem;
 }
 .details {
 	display:inline-block;
@@ -15,6 +15,9 @@ footer p {
 		display:inline-block;
 	}
 }
+.social-media {
+	width: 22%;
+}
 .icons .fa {
 	display:inline-block;
 	color:#70838E;
@@ -22,6 +25,10 @@ footer p {
 	&:hover {
 		color:white;
 	}
+}
+.outer-contact-container {
+	position:relative;
+	top:-130px;
 }
 .contact-container {
 	background: white;
