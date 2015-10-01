@@ -17,6 +17,7 @@ footer p {
 }
 .social-media {
 	width: 22%;
+	transform: translateY(-200px);
 }
 .icons .fa {
 	display:inline-block;
@@ -88,6 +89,7 @@ textarea {
 	display:inline-block;
 	margin-left:3%;
 	position:relative;
+	transform: translateY(-200px);
 }
 .address-container::before{
 	content: url(../assets/locationicon.png);

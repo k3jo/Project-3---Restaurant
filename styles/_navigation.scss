@@ -5,6 +5,7 @@
 .nav-wrapper {
 	margin:0 auto;
 	width: 80%;
+	height: 100vh;
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
@@ -130,6 +131,7 @@ div.nav-social{
 .nav-social-copyright {
 	align-self:flex-end;
 	margin:0 auto;
+	padding-bottom:4%;
 }
 .nav-social a .fa:hover {
 	color:white;

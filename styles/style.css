@@ -164,6 +164,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .nav-wrapper {
   margin: 0 auto;
   width: 80%;
+  height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -309,6 +310,7 @@ div.nav-social {
       -ms-flex-item-align: end;
           align-self: flex-end;
   margin: 0 auto;
+  padding-bottom: 4%;
 }
 
 .nav-social a .fa:hover {
@@ -786,6 +788,9 @@ footer p {
 
 .social-media {
   width: 22%;
+  -webkit-transform: translateY(-200px);
+      -ms-transform: translateY(-200px);
+          transform: translateY(-200px);
 }
 
 .icons .fa {
@@ -882,6 +887,9 @@ textarea {
   display: inline-block;
   margin-left: 3%;
   position: relative;
+  -webkit-transform: translateY(-200px);
+      -ms-transform: translateY(-200px);
+          transform: translateY(-200px);
 }
 
 .address-container::before {
