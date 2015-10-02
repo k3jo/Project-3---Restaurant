@@ -1279,6 +1279,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+  .photo-container .search-link {
+    top: 10%;
+  }
   .social-media {
     width: 60%;
     padding-bottom: 30px;

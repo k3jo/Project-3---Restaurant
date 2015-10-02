@@ -328,6 +328,13 @@ footer {
 	}
 }
 @media (max-width:500px){
+	// GALLERY
+	.photo-container{
+		.search-link {
+			top:10%;
+		}
+	}
+	// FOOTER
 	.social-media {
 		width: 60%;
 		padding-bottom:30px;
