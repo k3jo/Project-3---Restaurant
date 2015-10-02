@@ -140,6 +140,9 @@ footer {
 }
 
 @media (max-width:950px){
+	.wrapper {
+		padding:0% 5%;
+	}
 	// NAV STYLES:
 	nav ul {
 		margin-left:10%;
@@ -212,8 +215,6 @@ footer {
 		position:absolute;
 		width: 70%;
 	}
-
-	
 	// PROFILE STYLES
 	.profiles {
 		padding:2% 10%;
@@ -254,6 +255,28 @@ footer {
 	.column {
 		float:none;
 		width: 90%;
+	}
+	// FOOTER STYLES
+	.mapmarker {
+		top:0;
+	}
+	.social-media {
+		order:1;
+		width: 40%;
+		margin-right:5%;
+	}
+	.gourmet-full-details {
+		order:2;
+		width: 40%;
+		padding-left:5%;
+	}
+	.outer-contact-container {
+		order:3;
+		width: 75%;
+		.contact-container {
+			top:0;
+			margin-top:0;
+		}
 	}
 }
 @media (max-width:650px){
@@ -298,6 +321,22 @@ footer {
 		.search-link {
 			top:14%;
 		}
+	}
+	// FOOTER STYLES
+	.mapmarker {
+		left:45%;
+	}
+}
+@media (max-width:500px){
+	.social-media {
+		width: 60%;
+		padding-bottom:30px;
+		border-bottom:1px solid slategray;
+	}
+	.gourmet-full-details {
+		width: 50%;
+		padding-top:30px;
+		margin-left:25%;
 	}
 }
 /* Landscape phones and down */

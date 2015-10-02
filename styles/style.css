@@ -1115,6 +1115,9 @@ footer {
 }
 
 @media (max-width: 950px) {
+  .wrapper {
+    padding: 0% 5%;
+  }
   nav ul {
     margin-left: 10%;
   }
@@ -1201,6 +1204,36 @@ footer {
     float: none;
     width: 90%;
   }
+  .mapmarker {
+    top: 0;
+  }
+  .social-media {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 40%;
+    margin-right: 5%;
+  }
+  .gourmet-full-details {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 40%;
+    padding-left: 5%;
+  }
+  .outer-contact-container {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 75%;
+  }
+  .outer-contact-container .contact-container {
+    top: 0;
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1239,6 +1272,22 @@ footer {
   }
   .photo-container .search-link {
     top: 14%;
+  }
+  .mapmarker {
+    left: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .social-media {
+    width: 60%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid slategray;
+  }
+  .gourmet-full-details {
+    width: 50%;
+    padding-top: 30px;
+    margin-left: 25%;
   }
 }
 
